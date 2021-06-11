@@ -64,8 +64,8 @@ C:\kingFahadIntern2021\projects\ATA\ATA\bin\Newtonsoft.Json.xml
 C:\kingFahadIntern2021\projects\ATA\ATA\bin\Antlr3.Runtime.pdb
 C:\kingFahadIntern2021\projects\ATA\ATA\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\kingFahadIntern2021\projects\ATA\ATA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\kingFahadIntern2021\projects\ATA\ATA\obj\Debug\ATA.csprojAssemblyReference.cache
 C:\kingFahadIntern2021\projects\ATA\ATA\obj\Debug\ATA.csproj.CoreCompileInputs.cache
 C:\kingFahadIntern2021\projects\ATA\ATA\obj\Debug\ATA.csproj.CopyComplete
 C:\kingFahadIntern2021\projects\ATA\ATA\obj\Debug\ATA.dll
 C:\kingFahadIntern2021\projects\ATA\ATA\obj\Debug\ATA.pdb
+C:\kingFahadIntern2021\projects\ATA\ATA\obj\Debug\ATA.csprojAssemblyReference.cache
