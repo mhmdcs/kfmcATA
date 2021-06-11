@@ -24,10 +24,6 @@ namespace ATA.demo
             }
         }
 
-        protected void ddlUniversity_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         protected void populateUniversityCombo()
         {
@@ -57,7 +53,7 @@ namespace ATA.demo
 
         }
 
-        protected void ddlUniversity_SelectedIndexChanged1(object sender, EventArgs e)
+        protected void ddlUniversity_SelectedIndexChanged(object sender, EventArgs e)
         {
             //code to connect to db and pull universty information
             CRUD myCrud = new CRUD();

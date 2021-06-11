@@ -6,7 +6,7 @@
     <asp:Label ID="lblMsg" runat="server"></asp:Label>
     <br />
 
-    <asp:DropDownList ID="ddlUniversity" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlUniversity_SelectedIndexChanged1"></asp:DropDownList>
+    <asp:DropDownList ID="ddlUniversity" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlUniversity_SelectedIndexChanged"></asp:DropDownList>
     <br />
     <asp:DropDownList ID="ddlTemplate" runat="server">
     </asp:DropDownList>

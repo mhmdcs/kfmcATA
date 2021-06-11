@@ -9,6 +9,11 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
+            <td class="modal-sm" colspan="2" style="text-align: center">
+                <asp:Label ID="lblOutput" runat="server"></asp:Label>
+            </td>
+        </tr>
+        <tr>
             <td class="modal-sm" style="text-align: center">Student</td>
             <td>
                 <asp:TextBox ID="txtStudent" runat="server"></asp:TextBox>
@@ -37,7 +42,7 @@
         <tr>
             <td class="modal-sm" style="width: 243px">&nbsp;</td>
             <td>
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+                <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
             </td>
         </tr>
     </table>
