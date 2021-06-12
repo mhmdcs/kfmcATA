@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="registration.aspx.cs" Inherits="ATA.demo.registration" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
     <p>
         <br />
         </p>
@@ -22,8 +23,8 @@
         <tr>
             <td class="modal-sm" style="text-align: center">Active</td>
             <td style="margin-left: 40px">
-                <asp:RadioButton ID="rbtnActive" runat="server" Text="Yes" />
-                <asp:RadioButton ID="rbtnActive2" runat="server" Text="No" />
+                <asp:RadioButton ID="rbtnActive" runat="server" Text="Yes" GroupName="activeGroup" />
+                <asp:RadioButton ID="rbtnActive2" runat="server" Text="No" GroupName="activeGroup" />
             </td>
         </tr>
         <tr>

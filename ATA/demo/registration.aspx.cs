@@ -33,16 +33,18 @@ namespace ATA.demo
         }
 
 
+
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+
             // I put all the code that insert information into the db
             CRUD myCrud = new CRUD();
             string mySql = @"insert into student (student, active, genderId, allowance)
-                            values (@student,@active,@genderId,@allowance);";
+                            values (@student,@active,@genderId,@allowance)";
             // Dictionary object is used when the sql string query has operations like "where" or "insert"
             Dictionary<string, object> myPara = new Dictionary<string, object>();
             myPara.Add("@student", txtStudent.Text);
-            myPara.Add("@active", "1"); //fix this hardcoded value by combining the two radio button active buttons
+           // myPara.Add("@active", rbtnActive.Text); //fix this hardcoded value by combining the two radio button active buttons
             myPara.Add("@genderId", ddlGender.SelectedValue);
             myPara.Add("@allowance", txtAllowance.Text);
 
