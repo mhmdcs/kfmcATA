@@ -1,2 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters />
+<parameters>
+  <parameter name="ATA_v2ConStrxxx-Web.config Connection String" description="ATA_v2ConStrxxx Connection String used in web.config by the application to access the database." defaultValue="Data Source=MOMEK\SQLEXP2017;Initial Catalog=ATA_v2;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\kingFahadIntern2021\\projects\\ATA\\ATA\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ATA_v2ConStrxxx']/@connectionString" />
+  </parameter>
+  <parameter name="ATA_v2ConStr-Web.config Connection String" description="ATA_v2ConStr Connection String used in web.config by the application to access the database." defaultValue="Data Source=SQL5050.site4now.net;Initial Catalog=db_a75a38_ata;User Id=db_a75a38_ata_admin;Password=myT3stP@ss" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\kingFahadIntern2021\\projects\\ATA\\ATA\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ATA_v2ConStr']/@connectionString" />
+  </parameter>
+</parameters>

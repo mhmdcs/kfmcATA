@@ -17,6 +17,7 @@ namespace ATA.demo
             if (!IsPostBack) // means do it only once for each user session
             {
                 populateGenderCombo();
+                populateActiveCombo();
             }
 
         }
@@ -33,15 +34,26 @@ namespace ATA.demo
         }
 
 
+        protected void populateActiveCombo()
+        {
+            CRUD myCrud = new CRUD();
+            string mySql = @"select membership, membershipId from membership";
+            SqlDataReader dr = myCrud.getDrPassSql(mySql);
+            rblmembership.DataTextField = "membership";
+            rblmembership.DataValueField = "membershipId";
+            rblmembership.DataSource = dr;
+            rblmembership.DataBind();
+        }
+
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
 
             // I put all the code that insert information into the db
             CRUD myCrud = new CRUD();
-            string mySql = @"insert into student (student, active, genderId, allowance)
-                            values (@student,@active,@genderId,@allowance)";
-            // Dictionary object is used when the sql string query has operations like "where" or "insert"
+            string mySql = @"insert into student (student, active, genderId, allowance, membershipId)
+                            values (@student,@active,@genderId,@allowance,@membershipId)";
+            // Dictionary object is used when the sql string query has operations like "where" "insert" "update" "delete"
             Dictionary<string, object> myPara = new Dictionary<string, object>();
             myPara.Add("@student", txtStudent.Text);
 
@@ -56,6 +68,7 @@ namespace ATA.demo
 
             myPara.Add("@genderId", ddlGender.SelectedValue);
             myPara.Add("@allowance", txtAllowance.Text);
+            myPara.Add("@membershipId", rblmembership.SelectedValue);
 
             int rtn = myCrud.InsertUpdateDelete(mySql, myPara);
 
