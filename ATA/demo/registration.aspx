@@ -23,7 +23,7 @@
         <tr>
             <td class="modal-sm" style="text-align: center">Active</td>
             <td style="margin-left: 40px">
-                <asp:RadioButton ID="rbtnActive" runat="server" Text="Yes" GroupName="activeGroup" />
+                <asp:RadioButton ID="rbtnActive1" runat="server" Text="Yes" GroupName="activeGroup" />
                 <asp:RadioButton ID="rbtnActive2" runat="server" Text="No" GroupName="activeGroup" />
             </td>
         </tr>

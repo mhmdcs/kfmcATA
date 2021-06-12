@@ -31,13 +31,13 @@ namespace ATA.demo {
         protected global::System.Web.UI.WebControls.TextBox txtStudent;
         
         /// <summary>
-        /// rbtnActive control.
+        /// rbtnActive1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbtnActive;
+        protected global::System.Web.UI.WebControls.RadioButton rbtnActive1;
         
         /// <summary>
         /// rbtnActive2 control.

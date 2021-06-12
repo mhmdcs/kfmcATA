@@ -44,14 +44,23 @@ namespace ATA.demo
             // Dictionary object is used when the sql string query has operations like "where" or "insert"
             Dictionary<string, object> myPara = new Dictionary<string, object>();
             myPara.Add("@student", txtStudent.Text);
-           // myPara.Add("@active", rbtnActive.Text); //fix this hardcoded value by combining the two radio button active buttons
+
+            if (rbtnActive1.Checked == true)
+            {
+            myPara.Add("@active", 1);
+            }
+            else if (rbtnActive2.Checked == true)
+            {
+            myPara.Add("@active", 0);
+            }
+
             myPara.Add("@genderId", ddlGender.SelectedValue);
             myPara.Add("@allowance", txtAllowance.Text);
 
             int rtn = myCrud.InsertUpdateDelete(mySql, myPara);
 
             if (rtn >= 1) {
-                lblOutput.Text = "Success Operation!";
+                lblOutput.Text = "Successful Operation!";
             }
             else {
                 lblOutput.Text = "Failed Operation";
